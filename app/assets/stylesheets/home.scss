@@ -1,0 +1,112 @@
+
+/*find google fonts to use*/
+body{
+	/*background-image:url("images/Generic_Canvass.png")*/
+
+	background-color:#B87333;
+	color:#fff;
+	font-family:"spectral", serif;
+	margin:0;
+	padding:0;
+	font-size:18px;
+	
+
+}
+*{
+	box-sizing: border-box;
+}
+
+ul{
+	list-style-image:url("images/leaf.png");
+}
+
+
+h1{
+	font-family:"fondamento", Serif;
+	font-size:2.2em;
+}
+
+h2{
+	font-family:"fondamento", Serif;
+	font-size:1.8em;
+}
+
+p::first-letter{
+	font-family:"fondamento";
+	font-size:1.7em;
+}
+
+.wrapper{
+	width:1000px;
+	margin: 10px auto;
+	background-color:#edcab1;
+	padding:15px 15px 10px 15px;
+	overflow:hidden;
+	display:block;
+	border-radius: 20px;
+		-moz-border-radius:20px;
+		-webkit-border-radius:20px;
+		-khtml-border-radius:20px;
+
+}
+
+
+.main{
+	float:right;
+	width:70%;
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+.header{
+
+	background-color:#6D652F;
+	padding:20px 5px;
+	margin:0 auto;
+	width:100%;
+	text-align: center;
+}
+
+.article{
+
+	width:100%;
+	position:relative;
+
+}
+aside p{
+	font-size:.8em;
+}
+
+.sidebar{ 
+	color:#fff;
+	background-color: #6D652F;
+	padding:10px;
+	float:left;
+	width:27%;
+	overflow:hidden;
+	display:block;
+}
+
+	.sidebar a{
+		text-decoration: none;
+		color:inherit;
+
+	}
+
+	.sidebar a:hover{
+		text-decoration: underline;
+		font:italic;
+		color:#20303D;
+	}
+
+.darktext{
+	color:#000;
+}
+
+footer{
+	clear:both;
+	text-align:center;
+	
+}
