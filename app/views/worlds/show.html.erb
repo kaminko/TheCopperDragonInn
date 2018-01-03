@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @world.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @world.content %>
+</p>
+
+<%= link_to 'Edit', edit_world_path(@world) %> |
+<%= link_to 'Back', worlds_path %>
