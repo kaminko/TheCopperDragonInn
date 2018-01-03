@@ -38,12 +38,13 @@
 	         			<li>
 	         				<div class="dropWorlds">
 	         					<span>
-	         						<a href="Worlds.html" target="_blank"> Worlds</a>
+	         						<%= link_to "Worlds", worlds_url%>
 	         					</span>
 		         				<div class="worlds-content">
 				         			<ul>
-				         				<li> <a href="Theis.html" target="_blank" > Theis</a>
-				         				</li>
+				         				<% @worlds.each do |world| %>
+					         				<li> <%= link_to truncate(world.title, length:10), world%></li>
+					         			<%end%>
 				         			</ul>
 				         		</div>
 					        </div>
