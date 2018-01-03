@@ -38,15 +38,15 @@ p::first-letter{
 
 .wrapper{
 	width:1000px;
-	margin: 10px auto;
+	margin: 1% auto;
 	background-color:#edcab1;
-	padding:15px 15px 10px 15px;
-	overflow:hidden;
+	padding:1.5% 1.5% 1% 1.5%;
+	overflow:visible;
 	display:block;
-	border-radius: 20px;
-		-moz-border-radius:20px;
-		-webkit-border-radius:20px;
-		-khtml-border-radius:20px;
+	border-radius: 2%;
+		-moz-border-radius:2%;
+		-webkit-border-radius:2%;
+		-khtml-border-radius:2%;
 
 }
 
@@ -63,7 +63,7 @@ p::first-letter{
 .header{
 
 	background-color:#6D652F;
-	padding:20px 5px;
+	padding:2% .7%;
 	margin:0 auto;
 	width:100%;
 	text-align: center;
@@ -82,10 +82,10 @@ aside p{
 .sidebar{ 
 	color:#fff;
 	background-color: #6D652F;
-	padding:10px;
+	padding:1%;
 	float:left;
 	width:27%;
-	overflow:hidden;
+	overflow:visible;
 	display:block;
 }
 
@@ -105,8 +105,51 @@ aside p{
 	color:#000;
 }
 
+.dropWorlds {
+    position: relative;
+    display: inline-block;
+}
+
+.dropChars {
+    position: relative;
+    display: inline-block;
+}
+
+.worlds-content {
+    display: none;
+    position: absolute;
+    background-color: #6D652F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.characters-content {
+    display: none;
+    position: absolute;
+    background-color: #6D652F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropWorlds:hover  .worlds-content {
+    display: block;
+}
+
+.dropChars:hover .characters-content {
+    display: block;
+}
+
 footer{
 	clear:both;
 	text-align:center;
 	
+}
+
+@media only screen and (max-width:999px){
+	.wrapper{
+		width:100%;
+	}
 }
