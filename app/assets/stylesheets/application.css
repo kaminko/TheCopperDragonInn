@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body{
+	/*background-image:url("images/Generic_Canvass.png")*/
+
+	background-color:#B87333;
+	color:#fff;
+	font-family:"spectral", serif;
+	margin:0;
+	padding:0;
+	font-size:18px;
+	
+
+}
+*{
+	box-sizing: border-box;
+}
+
+ul{
+	list-style-image:url("leaf");
+}
+
+
+h1{
+	font-family:"fondamento", Serif;
+	font-size:2.2em;
+}
+
+h2{
+	font-family:"fondamento", Serif;
+	font-size:1.8em;
+}
+
+p::first-letter{
+	font-family:"fondamento";
+	font-size:1.7em;
+}
+footer{
+	clear:both;
+	text-align:center;
+	
+}
+

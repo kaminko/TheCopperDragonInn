@@ -1,3 +1,58 @@
 // Place all the styles related to the Worlds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper{
+	width:1000px;
+	margin: 10px auto;
+	background-color:#edcab1;
+	padding:15px 15px 10px 15px;
+	overflow:hidden;
+	display:block;
+	border-radius: 20px;
+		-moz-border-radius:20px;
+		-webkit-border-radius:20px;
+		-khtml-border-radius:20px;
+}
+
+
+.main{
+	float:right;
+	width:70%;
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+	
+
+.header{
+
+	background-color:#6D652F;
+	padding:20px 5px;
+	margin:0 auto;
+	width:100%;
+	text-align: center;
+}
+
+.sidebar{ 
+	color:#fff;
+	background-color: #6D652F;
+	padding:10px;
+	float:left;
+	width:27%;
+	overflow:hidden;
+	display:block;
+}
+
+	.sidebar a{
+		text-decoration: none;
+		color:inherit;
+
+	}
+
+	.sidebar a:hover{
+		text-decoration: underline;
+		font:italic;
+		color:#20303D;
+	}

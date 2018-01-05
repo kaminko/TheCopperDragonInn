@@ -1,29 +1,28 @@
 <p id="notice"><%= notice %></p>
+<div class="wrapper">
+  <div class="main">
+    <div class="header">
+      <h1>Worlds</h1>
+    </div>
 
-<h1>Worlds</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @worlds.each do |world| %>
-      <tr>
-        <td><%= world.title %></td>
-        <td><%= world.content %></td>
-        <td><%= link_to 'Show', world %></td>
-        <td><%= link_to 'Edit', edit_world_path(world) %></td>
-        <td><%= link_to 'Destroy', world, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New World', new_world_path %>
+      <ul>
+        <% @worlds.each do |world| %>
+          <li>
+            <%= link_to world.title, world %>
+          </li>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="sidebar">
+    <h2>Expanding Horizons</h2>
+    <aside>
+      listed here are currently the <%= @worlds.count%> world that I and others have created. 
+    </aside>
+  </div>
+    <br>
+  <footer>
+    <%= link_to 'New World', new_world_path %>
+    <%= link_to "Home", root_url %>
+  </footer>
+</div>
