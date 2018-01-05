@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20180105210638) do
     t.text "characters"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "ancestry"
     t.index ["ancestry"], name: "index_character_systems_on_ancestry"
   end
 
