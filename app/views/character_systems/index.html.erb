@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Character Systems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Characters</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @character_systems.each do |character_system| %>
+      <tr>
+        <td><%= character_system.system %></td>
+        <td><%= character_system.characters %></td>
+        <td><%= link_to 'Show', character_system %></td>
+        <td><%= link_to 'Edit', edit_character_system_path(character_system) %></td>
+        <td><%= link_to 'Destroy', character_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character System', new_character_system_path %>

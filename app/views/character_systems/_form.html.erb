@@ -1,0 +1,27 @@
+<%= form_with(model: character_system, local: true) do |form| %>
+  <% if character_system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(character_system.errors.count, "error") %> prohibited this character_system from being saved:</h2>
+
+      <ul>
+      <% character_system.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :system %>
+    <%= form.text_field :system, id: :character_system_system %>
+  </div>
+
+  <div class="field">
+    <%= form.label :characters %>
+    <%= form.text_area :characters, id: :character_system_characters %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

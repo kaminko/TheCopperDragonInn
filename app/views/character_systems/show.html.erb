@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>System:</strong>
+  <%= @character_system.system %>
+</p>
+
+<p>
+  <strong>Characters:</strong>
+  <%= @character_system.characters %>
+</p>
+
+<%= link_to 'Edit', edit_character_system_path(@character_system) %> |
+<%= link_to 'Back', character_systems_path %>

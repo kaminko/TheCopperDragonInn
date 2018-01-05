@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :character_systems
   resources :worlds
   root 'home#index'
 

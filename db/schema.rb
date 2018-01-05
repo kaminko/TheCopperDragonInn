@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180103201923) do
+ActiveRecord::Schema.define(version: 20180105210638) do
+
+  create_table "character_systems", force: :cascade do |t|
+    t.string "system"
+    t.text "characters"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ancestry"], name: "index_character_systems_on_ancestry"
+  end
 
   create_table "worlds", force: :cascade do |t|
     t.string "title"
